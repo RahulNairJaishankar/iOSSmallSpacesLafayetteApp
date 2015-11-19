@@ -35,6 +35,11 @@ class FirstViewController: UIViewController , MKMapViewDelegate , CLLocationMana
         var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         map.setRegion(region, animated: true)
         
+        //adding dummy location for testing.
+        artPieces.append(ExampleJsonFile(lat: 40.41941497, long: -86.88824344, artistName: "Jenna Robinson", artImage: UIImage(named: "catImage")!))
+        map.addAnnotation(artPieces[0].annotation)
+        map.setRegion(MKCoordinateRegionMake(artPieces[0].location, span), animated: true)
+        
         
     }
     

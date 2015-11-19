@@ -101,6 +101,14 @@
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="ylv-FY-c9b"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQe-pU-0n4">
+                                <rect key="frame" x="153" y="368" width="96" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Testing segue"/>
+                                <connections>
+                                    <segue destination="4Qh-Tl-R57" kind="show" id="ZzH-QO-ZJR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -114,6 +122,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1326.5" y="469.5"/>
+        </scene>
+        <!--It Works-->
+        <scene sceneID="aGc-fR-41m">
+            <objects>
+                <viewController id="4Qh-Tl-R57" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KAK-mx-FQD"/>
+                        <viewControllerLayoutGuide type="bottom" id="zEs-OM-0pZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aS9-vT-vhx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="It Works" id="HY2-6R-Oan"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="40e-7s-0QS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860.5" y="-269.5"/>
         </scene>
         <!--Show View Controller-->
         <scene sceneID="T3S-yD-gQg">

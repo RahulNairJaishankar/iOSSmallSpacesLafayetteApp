@@ -26,7 +26,8 @@ class SecondViewController: UIViewController ,UICollectionViewDelegate, UICollec
         let value = UIInterfaceOrientation.Portrait.rawValue
         UIDevice.currentDevice().setValue(value, forKey: "orientation")
         
-        artPieces.append(ExampleJsonFile(lat: 40.41941497, long: -86.88824344, artistName: "Jenna Robinson", artImage: UIImage(named: "catImage")!))
+        //dummy location
+        //artPieces.append(ExampleJsonFile(lat: 40.41941497, long: -86.88824344, artistName: "Jenna Robinson", artImage: UIImage(named: "catImage")!))
     }
 
     override func didReceiveMemoryWarning() {
