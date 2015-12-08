@@ -28,16 +28,21 @@ class FirstViewController: UIViewController , MKMapViewDelegate , CLLocationMana
         
         var latitude: CLLocationDegrees = 40.420038 // default view of map
         var longitude: CLLocationDegrees = -86.891996
-        var latDelta:CLLocationDegrees = 0.007
-        var lonDelta:CLLocationDegrees = 0.007
+        var latDelta:CLLocationDegrees = 0.005
+        var lonDelta:CLLocationDegrees = 0.005
         var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
         var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
         var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         map.setRegion(region, animated: true)
         
         //adding dummy location for testing.
-        artPieces.append(ExampleJsonFile(lat: 40.41941497, long: -86.88824344, artistName: "Jenna Robinson", artImage: UIImage(named: "catImage")!))
+        artPieces.append(ExampleJsonFile(lat: 40.41966283, long: -86.8890671, artistName: "Jenna Robinson", artImage: UIImage(named: "catImage")!))
+        artPieces.append(ExampleJsonFile(lat: 40.41963615, long: -86.88926888, artistName: "Esteban Garcia", artImage: UIImage(named: "catImage")!))
+        artPieces.append(ExampleJsonFile(lat: 40.41943113, long: -86.8894967, artistName: "James Werner", artImage: UIImage(named: "catImage")!))
         map.addAnnotation(artPieces[0].annotation)
+        map.addAnnotation(artPieces[1].annotation)
+        map.addAnnotation(artPieces[2].annotation)
+        
         map.setRegion(MKCoordinateRegionMake(artPieces[0].location, span), animated: true)
         
         

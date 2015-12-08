@@ -7,6 +7,26 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--About-->
+        <scene sceneID="688-K5-K2F">
+            <objects>
+                <viewController id="NSi-09-iJF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v4S-GX-G5Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="NLc-8C-PGJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7ad-1r-PRa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="About" id="o1L-kQ-IOq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZx-Cm-maa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734.5" y="-1096.5"/>
+        </scene>
         <!--Small Spaces Lafayette-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
@@ -64,21 +84,21 @@
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="WF7-Bu-cha">
-                                    <size key="itemSize" width="155" height="141"/>
+                                    <size key="itemSize" width="175" height="141"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="8" minY="8" maxX="8" maxY="8"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" reuseIdentifier="cell" id="ghZ-Dh-o1f" customClass="CollectionViewCell" customModule="SmallSpaces" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="72" width="155" height="141"/>
+                                        <rect key="frame" x="8" y="72" width="175" height="141"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="155" height="141"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="175" height="141"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uPT-29-9Mf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="155" height="141"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="175" height="141"/>
                                                     <animations/>
                                                 </imageView>
                                             </subviews>
@@ -87,10 +107,10 @@
                                         </view>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="uPT-29-9Mf" secondAttribute="bottom" id="Fay-ia-kFS"/>
-                                            <constraint firstItem="uPT-29-9Mf" firstAttribute="top" secondItem="ghZ-Dh-o1f" secondAttribute="top" id="T5a-SF-G1Y"/>
-                                            <constraint firstItem="uPT-29-9Mf" firstAttribute="leading" secondItem="ghZ-Dh-o1f" secondAttribute="leading" id="grD-rA-ahm"/>
-                                            <constraint firstAttribute="trailing" secondItem="uPT-29-9Mf" secondAttribute="trailing" id="wYQ-1n-FI9"/>
+                                            <constraint firstAttribute="bottom" secondItem="uPT-29-9Mf" secondAttribute="bottom" id="30B-UO-yaC"/>
+                                            <constraint firstItem="uPT-29-9Mf" firstAttribute="leading" secondItem="ghZ-Dh-o1f" secondAttribute="leading" id="NDj-Vf-z6V"/>
+                                            <constraint firstItem="uPT-29-9Mf" firstAttribute="top" secondItem="ghZ-Dh-o1f" secondAttribute="top" id="Rh4-69-OyZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="uPT-29-9Mf" secondAttribute="trailing" id="o03-nd-XPH"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="ImageView" destination="uPT-29-9Mf" id="EWy-pA-DHX"/>
@@ -103,7 +123,7 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zC9-Eu-6xv">
-                                <rect key="frame" x="0.0" y="64" width="375" height="149"/>
+                                <rect key="frame" x="-5" y="254" width="375" height="149"/>
                                 <animations/>
                                 <connections>
                                     <segue destination="mrm-Wv-TpK" kind="show" id="vnm-se-q90"/>
@@ -150,7 +170,7 @@
                                     <constraint firstAttribute="width" constant="234" id="zYY-zl-OS2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMR-bG-Ieh">
@@ -161,21 +181,20 @@
                                     <segue destination="CGg-4c-d28" kind="show" identifier="showLocation" id="JeO-41-cxJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYj-zV-Zu4">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYj-zV-Zu4">
                                 <rect key="frame" x="0.0" y="64" width="375" height="215"/>
                                 <animations/>
                                 <connections>
                                     <segue destination="OCy-hQ-GyI" kind="show" identifier="showLargerImage" id="Ovb-vJ-OLf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlr-10-rji">
-                                <rect key="frame" x="20" y="336" width="335" height="274"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R28-UB-lUu">
+                                <rect key="frame" x="20" y="316" width="335" height="294"/>
                                 <animations/>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut metus fringilla lorem egestas viverra ut ut lacus. Etiam ex justo, rhoncus et eros a, aliquam pellentesque ex. Nunc ultrices, nibh id cursus tincidunt, lorem purus cursus lacus, et volutpat risus sapien eget ipsum. Vivamus auctor aliquam nisl, non molestie nisi maximus ac. Aliquam facilisis ante id lobortis cursus. Praesent vitae ante facilisis, lacinia lorem et, mollis justo. Pellentesque ut viverra ligula. Sed finibus lacus at dapibus tempor.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <mutableString key="text">This comical Jenna Robinson piece is stationed on a back alley fence deep within Lafayette. Robinson drew inspiration from her roommate’s cat and made her mark on Small Spaces with a quirky piece. It is done in a lively and eccentric pop art style similar to pieces by Andy Warhol. A favorite of Small Spaces curator Zach Medler, these cats are sure to brighten even the stormiest Indiana days. Robinson works at Purdue and serves as a Small Spaces ambassador; she is a part of the team of West Lafayette artists helping to bridge the gap between the students of Purdue and the residents of Lafayette.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -183,11 +202,16 @@
                             <constraint firstItem="VMR-bG-Ieh" firstAttribute="baseline" secondItem="YHy-p3-Qep" secondAttribute="baseline" id="0vS-Qg-2E9"/>
                             <constraint firstItem="N6o-Ik-cXT" firstAttribute="top" secondItem="45o-f7-B4l" secondAttribute="bottom" id="16t-cW-Gby"/>
                             <constraint firstItem="YHy-p3-Qep" firstAttribute="leading" secondItem="OxU-H5-XD7" secondAttribute="leadingMargin" constant="4" id="1Q3-ep-xa0"/>
+                            <constraint firstItem="R28-UB-lUu" firstAttribute="leading" secondItem="YHy-p3-Qep" secondAttribute="leading" id="1hN-Np-ZYJ"/>
                             <constraint firstItem="VMR-bG-Ieh" firstAttribute="leading" secondItem="YHy-p3-Qep" secondAttribute="trailing" constant="8" symbolic="YES" id="D4e-BA-QkF"/>
                             <constraint firstAttribute="trailing" secondItem="N6o-Ik-cXT" secondAttribute="trailing" id="EHT-2R-V1y"/>
+                            <constraint firstItem="R28-UB-lUu" firstAttribute="top" secondItem="YHy-p3-Qep" secondAttribute="bottom" constant="8" symbolic="YES" id="Hhe-cN-pQg"/>
+                            <constraint firstItem="R28-UB-lUu" firstAttribute="centerX" secondItem="OYj-zV-Zu4" secondAttribute="centerX" id="OiU-Ho-eMV"/>
                             <constraint firstItem="VMR-bG-Ieh" firstAttribute="firstBaseline" secondItem="YHy-p3-Qep" secondAttribute="baseline" id="To3-xC-1rt"/>
+                            <constraint firstItem="pkO-tT-BzH" firstAttribute="top" secondItem="R28-UB-lUu" secondAttribute="bottom" constant="8" symbolic="YES" id="WRc-Ho-CH6"/>
                             <constraint firstItem="N6o-Ik-cXT" firstAttribute="leading" secondItem="OxU-H5-XD7" secondAttribute="leading" id="ZVR-KY-9o5"/>
                             <constraint firstItem="VMR-bG-Ieh" firstAttribute="centerY" secondItem="YHy-p3-Qep" secondAttribute="centerY" id="jsl-J3-5VW"/>
+                            <constraint firstItem="R28-UB-lUu" firstAttribute="trailing" secondItem="VMR-bG-Ieh" secondAttribute="trailing" id="qub-gJ-F47"/>
                             <constraint firstItem="YHy-p3-Qep" firstAttribute="top" secondItem="N6o-Ik-cXT" secondAttribute="bottom" constant="8" symbolic="YES" id="sKP-jf-BHS"/>
                         </constraints>
                     </view>
@@ -291,6 +315,7 @@
                     <connections>
                         <segue destination="1Rc-kG-9Wl" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="mcB-a3-ZxP" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="NSi-09-iJF" kind="relationship" relationship="viewControllers" id="Pq5-JM-EOC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -339,6 +364,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="About" width="33" height="33"/>
         <image name="Gallery" width="33" height="33"/>
         <image name="Map" width="33" height="33"/>
     </resources>
