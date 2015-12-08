@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EFC92F8E1BF2D8C10093DFDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC92F8D1BF2D8C10093DFDE /* AppDelegate.swift */; };
+		EF1D22851C0E094000F014A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC92F8D1BF2D8C10093DFDE /* AppDelegate.swift */; };
+		EF8E01561C06294C004F37E4 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8E01551C06294C004F37E4 /* ImageViewController.swift */; };
 		EFC92F901BF2D8C10093DFDE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC92F8F1BF2D8C10093DFDE /* FirstViewController.swift */; };
 		EFC92F921BF2D8C10093DFDE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC92F911BF2D8C10093DFDE /* SecondViewController.swift */; };
 		EFC92F951BF2D8C10093DFDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC92F931BF2D8C10093DFDE /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF8E01551C06294C004F37E4 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		EFC92F8A1BF2D8C10093DFDE /* SmallSpaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallSpaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC92F8D1BF2D8C10093DFDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFC92F8F1BF2D8C10093DFDE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				EFC92F8D1BF2D8C10093DFDE /* AppDelegate.swift */,
+				EF8E01551C06294C004F37E4 /* ImageViewController.swift */,
 				EFC92FA91BFE294A0093DFDE /* ExampleJsonFile.swift */,
 				EFC92FA31BFBA98B0093DFDE /* CollectionViewCell.swift */,
 				EFC92FA51BFBA9DE0093DFDE /* MapViewController.swift */,
@@ -154,12 +157,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1D22851C0E094000F014A8 /* AppDelegate.swift in Sources */,
 				EFC92FAB1BFE375F0093DFDE /* ShowViewController.swift in Sources */,
 				EFC92F921BF2D8C10093DFDE /* SecondViewController.swift in Sources */,
-				EFC92F8E1BF2D8C10093DFDE /* AppDelegate.swift in Sources */,
 				EFC92FA41BFBA98B0093DFDE /* CollectionViewCell.swift in Sources */,
 				EFC92FA61BFBA9DE0093DFDE /* MapViewController.swift in Sources */,
 				EFC92FAA1BFE294A0093DFDE /* ExampleJsonFile.swift in Sources */,
+				EF8E01561C06294C004F37E4 /* ImageViewController.swift in Sources */,
 				EFC92F901BF2D8C10093DFDE /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,6 +28,8 @@ class SecondViewController: UIViewController ,UICollectionViewDelegate, UICollec
         
         //dummy location
         //artPieces.append(ExampleJsonFile(lat: 40.41941497, long: -86.88824344, artistName: "Jenna Robinson", artImage: UIImage(named: "catImage")!))
+        //artPieces.append(ExampleJsonFile(lat: 40.41941497, long: -86.88824344, artistName: "Jenna Robinson", artImage: UIImage(named: "catImage")!))
+        print(artPieces)
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,7 +52,8 @@ class SecondViewController: UIViewController ,UICollectionViewDelegate, UICollec
         
     }
     
-    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        print("abc")
         self.performSegueWithIdentifier("showImage", sender: self)
     }
     
@@ -70,6 +73,13 @@ class SecondViewController: UIViewController ,UICollectionViewDelegate, UICollec
             
             
         }
+        let vc = segue.destinationViewController as! ShowViewController
+        
+        vc.image = artPieces[0].image
+        vc.lat = artPieces[0].lat
+        vc.long = artPieces[0].long
+        vc.artistName = artPieces[0].artistName
+        
         
     }
     

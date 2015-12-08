@@ -37,6 +37,19 @@ class ShowViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "showLargerImage")
+        {
+            var vc = segue.destinationViewController as! ImageViewController
+            vc.imageFromSegue = image
+        }
+        if(segue.identifier == "showLocation")
+        {
+            var vc = segue.destinationViewController as! MapViewController
+            
+        }
+    }
+    
 
     /*
     // MARK: - Navigation

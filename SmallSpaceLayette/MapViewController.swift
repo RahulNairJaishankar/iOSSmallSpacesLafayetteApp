@@ -9,12 +9,25 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate {
 
+    @IBOutlet var map: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        var latitude: CLLocationDegrees = 40.420038 // default view of map
+        var longitude: CLLocationDegrees = -86.891996
+        var latDelta:CLLocationDegrees = 0.007
+        var lonDelta:CLLocationDegrees = 0.007
+        var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
+        var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+        map.setRegion(region, animated: true)
+        var annotation = artPieces[0].annotation;
+        map.addAnnotation(annotation)
+        map.setRegion(MKCoordinateRegionMake(artPieces[0].location, span), animated: true)
+
     }
 
     override func didReceiveMemoryWarning() {

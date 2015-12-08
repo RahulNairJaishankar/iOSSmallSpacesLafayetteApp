@@ -16,6 +16,7 @@ class ExampleJsonFile
     var location: CLLocationCoordinate2D
     var annotation = MKPointAnnotation()
     var artistName: String
+    //var rightButton: UIButton
     
     init(lat: CLLocationDegrees, long: CLLocationDegrees, artistName: String, artImage: UIImage)
     {
@@ -24,7 +25,9 @@ class ExampleJsonFile
         location = CLLocationCoordinate2DMake(lat, long)
         annotation.coordinate = location
         self.artistName = artistName
-        annotation.title = self.artistName
+        //annotation.title = self.artistName
+        //rightButton = UIButton(type: .DetailDisclosure)
+        //UIButton.buttonWithType(UIButtonType.DetailDisclosure) as UIButton
         image = artImage
         //annotation.subtitle = "Finally made this work"
     }

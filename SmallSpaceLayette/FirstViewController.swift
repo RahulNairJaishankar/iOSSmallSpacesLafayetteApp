@@ -54,10 +54,25 @@ class FirstViewController: UIViewController , MKMapViewDelegate , CLLocationMana
         var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         self.map.setRegion(region, animated: true)
     }*/
+    
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+        performSegueWithIdentifier("annotationClick", sender: self)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "annotationClick")
+        {
+            let vc = segue.destinationViewController as! ShowViewController
+            vc.image = artPieces[0].image
+            vc.lat = artPieces[0].lat
+            vc.long = artPieces[0].long
+            vc.artistName = artPieces[0].artistName
+        }
     }
 
 
